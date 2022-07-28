@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
+
+:root {
+  --color-bg: #ffa5ab85;
+  --color-bg-card: #f9dbbd;
+  --color-title: #a53860;
+  --color-subtitle: #da627d;
+  --color-btn: #ed8494;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+body {
+  background: url(../img/cake-balls-g1a9800a81_1920.jpg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background: var(--color-bg-card);
+}
+.form::before {
+  content: '';
+  width: 290px;
+  min-height: 130vh;
+  background: var(--color-bg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.form__title {
+  text-align: center;
+  color: var(--color-title);
+  margin: 20px 0;
+}
+.form__label {
+  color: var(--color-subtitle);
+}
+.form__input {
+  margin: 8px 10px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.form__textarea {
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+.form__btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btn__btn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+.btn__submit {
+  background: var(--color-title);
+}
+.btn__reset {
+  background: var(--color-btn);
+}

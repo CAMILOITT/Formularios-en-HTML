@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 02 - Formularios en HTML</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form action="/" class="form">
+      <h1 class="form__title">bienvenidos</h1>
+      <label for="name" class="form-name form__label">Nombre: </label>
+      <input
+        type="text"
+        name="user-name"
+        id="name"
+        class="form__input--name form__input"
+      />
+
+      <label for="age" class="form__age form__label">Edad: </label>
+      <input
+        type="text"
+        name="user-age"
+        id="age"
+        class="form__input--age form__input"
+      />
+
+      <label for="favorite-phrase" class="form__favorite-phrase form__label"
+        >Frase favorita:</label
+      >
+      <textarea
+        name="user-favorite-phrase"
+        id="favorite-phrase"
+        cols="40"
+        rows="5"
+        class="form__textarea"
+      ></textarea>
+
+      <div class="form__btn">
+        <button type="reset" class="btn__reset btn__btn">Resetear</button>
+        <button type="submit" class="btn__submit btn__btn">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
